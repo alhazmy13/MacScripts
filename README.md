@@ -5,28 +5,20 @@ A list of shell commands and tools specific to OS X.
 	
 	
 ## How to install
-just download `script` folder on your home path and then add below command to your `.zshrc` file
+ in order to make this work, you will need to have `oh-my-zsh` installed on your OS.
 
-```shell
-alias mac=~/scripts/mac.sh
-```
-
-**Make sure** to give the `script` folder the `+x` permission
-
-```shell
-chmod +x script
-```
+* Download `mac` folder and move it to `~/.oh-my-zsh/plugins/` 
+* Enable the plugin by editing your `~/.zshrc` file and add it to your list of plugins `plugins=(... mac)`
 
 ##usage
 just type `mac -COMMAND` 
-That's all and don't forget to drink your cup of coffee :D
+
 
 ## List of Commands
-* **-files [-show]|[-hide]**	to hide/show all files on your mac
-* **-help**				to show a list of commands
-* **-store-app**			List All Apps Downloaded from App Store 
-* **-disk** 			show All Attached Disks and Partitions
-* **-icon [-enable]|[-disable]**	enable/disable dock icon bounce 
-* **-html [file.ext]**		convert file to html, Supported formats (txt,rtf,doc,docx).
+* **files [-show]|[-hide]**	to hide/show all files on your mac
+* **store-app**			List All Apps Downloaded from App Store 
+* **disk** 			show All Attached Disks and Partitions
+* **icon [-enable]|[-disable]**	enable/disable dock icon bounce 
+* **html [file.ext]**		convert file to html, Supported formats (txt,rtf,doc,docx).
 
 

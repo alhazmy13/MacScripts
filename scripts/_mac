@@ -1,0 +1,54 @@
+#compdef mac
+
+# Mac Scripts
+# Author: Abdullah Alhazmy <me@alhazmy13.net>
+
+
+local curcontext="$curcontext" state line _opts _bundles ret=1
+_arguments -C \
+    '1: :->cmds' \
+    '*:: :->args' && ret=0
+
+
+
+
+enable_disable_commands=(
+'enable'
+'disable'
+)
+
+status_commands=(
+'enable'
+'disable'
+'status'
+)
+
+case $state in
+    cmds)
+
+    _values "Script commands" \
+        'files[to hide/show all files on your mac]' \
+        'store-app[List All Apps Downloaded from App Store]' \
+        'disk[show All Attached Disks and Partitions]' \
+        'icon[enable/disable dock icon bounce]' \
+        'html[convert file to html, Supported formats (txt,rtf,doc,docx).]'\
+        'bluetooth[enable/disable bluetooth]'\
+        'html files.ext[to show a list of commands]'
+        ret=0
+        ;;
+    args)
+        case $line[1] in
+            icon)
+                _describe -t commands '' enable_disable_commands
+                ;;
+            files)
+              _describe -t commands '' enable_disable_commands
+                ;;
+            bluetooth)
+                _describe -t commands '' status_commands
+                ;;
+        esac
+        ;;
+esac
+
+return ret
