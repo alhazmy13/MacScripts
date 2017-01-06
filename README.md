@@ -1,16 +1,22 @@
-#MAC Scripts
+# MAC Scripts
 A list of shell commands and tools specific to OS X.
 
-	You don’t have to know everything. You simply need to know where to find it when necessary.” (John Brunner)
+	You don’t have to know everything. You simply need to know where to find it when necessary.”
+	(John Brunner)
 	
-	
+
+## Looking for contributors
+
+We are always very happy to have contributions, whether for adding commands or to fix any isssue :D
+
+
 ## How to install
  in order to make this work, you will need to have `oh-my-zsh` installed on your OS.
 
 * Download `mac` folder and move it to `~/.oh-my-zsh/plugins/` 
 * Enable the plugin by editing your `~/.zshrc` file and add it to your list of plugins `plugins=(... mac)`
 
-##usage
+## usage
 just type `mac -COMMAND` 
 
 
