@@ -21,10 +21,13 @@ just type `mac -COMMAND`
 
 
 ## List of Commands
-* **files [-show]|[-hide]**	to hide/show all files on your mac
+* **html [file.ext]**		convert file to html, Supported formats
+(txt,rtf,doc,docx).
+* **mamp** to start/stop or restart mamp server
+* **files [show]|[hide]**	to hide/show all files on your mac
 * **store-app**			List All Apps Downloaded from App Store 
 * **disk** 			show All Attached Disks and Partitions
-* **icon [-enable]|[-disable]**	enable/disable dock icon bounce 
-* **html [file.ext]**		convert file to html, Supported formats (txt,rtf,doc,docx).
+* **icon [enable]|[disable]**	enable/disable dock icon bounce 
+* **'bluetooth[enable]|[disable]|[status]** to enable/disable bluetooth]
 
 

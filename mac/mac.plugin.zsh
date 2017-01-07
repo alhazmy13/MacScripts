@@ -67,6 +67,23 @@ case "$1" in
 			echo "command missing"
 		fi
 		;;
+	"mamp")
+		if [ "$2" '==' "start" ]; then
+			/Applications/MAMP/bin/startMysql.sh
+			/Applications/MAMP/bin/startApache.sh
+		elif [ "$2" '==' "stop" ]; then
+			/Applications/MAMP/bin/stopMysql.sh
+			/Applications/MAMP/bin/stopApache.sh
+		elif [ "$2" '==' "restart" ]; then
+			/Applications/MAMP/bin/stopMysql.sh
+			/Applications/MAMP/bin/stopApache.sh
+			sleep 4
+			/Applications/MAMP/bin/startMysql.sh
+			/Applications/MAMP/bin/startApache.sh
+		else
+			echo "command missing"
+		fi
+		;;
 	"help")
 		echo "Hi"
 		;;

@@ -23,17 +23,23 @@ status_commands=(
 'status'
 )
 
+mamp_commands=(
+'start'
+'stop'
+'restart'
+)
+
 case $state in
     cmds)
 
     _values "Script commands" \
-        'files[to hide/show all files on your mac]' \
-        'store-app[List All Apps Downloaded from App Store]' \
+        'html[convert file to html, Supported formats (txt,rtf,doc,docx).]'\
+        'mamp[to start/stop or restart mamp server]'\
+        'bluetooth[enable/disable bluetooth]'\
         'disk[show All Attached Disks and Partitions]' \
         'icon[enable/disable dock icon bounce]' \
-        'html[convert file to html, Supported formats (txt,rtf,doc,docx).]'\
-        'bluetooth[enable/disable bluetooth]'\
-        'html files.ext[to show a list of commands]'
+        'files[to hide/show all files on your mac]' \
+        'store-app[List All Apps Downloaded from App Store]' 
         ret=0
         ;;
     args)
@@ -46,6 +52,9 @@ case $state in
                 ;;
             bluetooth)
                 _describe -t commands '' status_commands
+                ;;
+            mamp)
+                _describe -t commands '' mamp_commands
                 ;;
         esac
         ;;
