@@ -84,6 +84,9 @@ case "$1" in
 			echo "command missing"
 		fi
 		;;
+	"android-keystore")
+		keytool -list -v -keystore ~/.android/debug.keystore -alias androiddebugkey -storepass android -keypass android
+		;;
 	"help")
 		echo "Hi"
 		;;

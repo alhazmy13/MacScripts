@@ -35,6 +35,7 @@ case $state in
     _values "Script commands" \
         'html[convert file to html, Supported formats (txt,rtf,doc,docx).]'\
         'mamp[to start/stop or restart mamp server]'\
+        'android-keystore[To get the debug certificate fingerprint]'\
         'bluetooth[enable/disable bluetooth]'\
         'disk[show All Attached Disks and Partitions]' \
         'icon[enable/disable dock icon bounce]' \
