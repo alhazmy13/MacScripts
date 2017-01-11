@@ -23,6 +23,8 @@ just type `mac -COMMAND`
 ## List of Commands
 * **html [file.ext]**		convert file to html, Supported formats
 (txt,rtf,doc,docx).
+* **android-keystore**	To get the debug certificate fingerprint
+
 * **mamp** to start/stop or restart mamp server
 * **files [show]|[hide]**	to hide/show all files on your mac
 * **store-app**			List All Apps Downloaded from App Store 
