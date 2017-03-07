@@ -14,7 +14,7 @@ We are always very happy to have contributions, whether for adding commands or t
  in order to make this work, you will need to have `oh-my-zsh` installed on your OS.
 
 * clone this repo to plugins folder 
-	```bash
+```
  git clone https://github.com/alhazmy13/MacScripts.git $ZSH/plugins/mac
 ```
 * Enable the plugin by editing your `~/.zshrc` file and add it to your list of plugins `plugins=(... mac)`
