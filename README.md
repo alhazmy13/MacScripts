@@ -13,7 +13,10 @@ We are always very happy to have contributions, whether for adding commands or t
 ## How to install
  in order to make this work, you will need to have `oh-my-zsh` installed on your OS.
 
-* Download `mac` folder and move it to `~/.oh-my-zsh/plugins/` 
+* clone this repo to plugins folder 
+	```bash
+ git clone https://github.com/alhazmy13/MacScripts.git $ZSH/plugins/mac
+```
 * Enable the plugin by editing your `~/.zshrc` file and add it to your list of plugins `plugins=(... mac)`
 
 ## usage
