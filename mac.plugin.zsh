@@ -87,9 +87,21 @@ case "$1" in
 	"android-keystore")
 		keytool -list -v -keystore ~/.android/debug.keystore -alias androiddebugkey -storepass android -keypass android
 		;;
+	"venv")
+		if [ "$2" '==' "active" ]; then
+			deactivate &> /dev/null; source ./venv/bin/activate
+		elif [ "$2" '==' "deactive" ]; then
+			deactivate
+		elif [ "$2" '==' "create" ]; then
+			virtualenv venv
+		else
+			echo "command missing"
+		fi
+		;;
 	"help")
 		echo "Hi"
 		;;
+
 esac
 }
 

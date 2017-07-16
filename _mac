@@ -29,6 +29,12 @@ mamp_commands=(
 'restart'
 )
 
+venv_commands=(
+'active'
+'deactive'
+'create'
+)
+
 case $state in
     cmds)
 
@@ -40,7 +46,8 @@ case $state in
         'disk[show All Attached Disks and Partitions]' \
         'icon[enable/disable dock icon bounce]' \
         'files[to hide/show all files on your mac]' \
-        'store-app[List All Apps Downloaded from App Store]' 
+        'store-app[List All Apps Downloaded from App Store]' \
+        'venv[Active/Deactive and create Virtual Environments (Virtualenv)]'
         ret=0
         ;;
     args)
@@ -56,6 +63,9 @@ case $state in
                 ;;
             mamp)
                 _describe -t commands '' mamp_commands
+                ;;
+            venv)
+                _describe -t commands '' venv_commands
                 ;;
         esac
         ;;
