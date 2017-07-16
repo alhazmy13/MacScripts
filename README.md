@@ -34,5 +34,5 @@ just type `mac -COMMAND`
 * **disk** 			show All Attached Disks and Partitions
 * **icon [enable]|[disable]**	enable/disable dock icon bounce 
 * **'bluetooth[enable]|[disable]|[status]** to enable/disable bluetooth]
-
+* **venv** to active, deactive and create Virtual Environments (Virtualenv)
 
